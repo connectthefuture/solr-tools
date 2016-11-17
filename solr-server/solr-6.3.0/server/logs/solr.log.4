@@ -1,0 +1,1323 @@
+2016-11-16 19:57:41.916 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-11-16 19:57:42.175 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2016-11-16 19:57:42.176 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2016-11-16 19:57:42.176 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0
+2016-11-16 19:57:42.238 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2016-11-16T19:57:42.177Z
+2016-11-16 19:57:42.239 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2016-11-16 19:57:42.256 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr
+2016-11-16 19:57:42.262 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/solr.xml
+2016-11-16 19:57:42.501 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-11-16 19:57:42.580 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr
+2016-11-16 19:57:42.604 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@7c6908d7{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-11-16 19:57:42.604 INFO  (main) [   ] o.e.j.s.Server Started @1136ms
+2016-11-16 19:58:18.372 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326298138} status=0 QTime=69
+2016-11-16 19:58:18.413 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326298138} status=0 QTime=10
+2016-11-16 19:58:18.500 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479326298136} status=0 QTime=1
+2016-11-16 19:58:25.419 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479326298136} status=0 QTime=0
+2016-11-16 19:58:25.423 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479326298136} status=0 QTime=0
+2016-11-16 19:58:25.437 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326298138} status=0 QTime=11
+2016-11-16 20:03:33.193 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9
+2016-11-16 20:03:33.237 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=8
+2016-11-16 20:03:33.247 INFO  (qtp1123225098-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&wt=json} status=0 QTime=0
+2016-11-16 20:03:33.273 INFO  (qtp1123225098-20) [   ] o.a.s.h.a.CoreAdminOperation core create command name=test-core&action=CREATE&instanceDir=test-core&wt=json
+2016-11-16 20:03:33.388 INFO  (qtp1123225098-20) [   ] o.a.s.c.SolrResourceLoader [test-core] Added 51 libs to classloader, from paths: [/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/clustering/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/extraction/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/langid/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/velocity/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/dist]
+2016-11-16 20:03:33.616 INFO  (qtp1123225098-20) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-11-16 20:03:33.866 INFO  (qtp1123225098-20) [   ] o.a.s.s.IndexSchema [test-core] Schema name=example-data-driven-schema
+2016-11-16 20:03:34.416 INFO  (qtp1123225098-20) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2016-11-16 20:03:34.456 INFO  (qtp1123225098-20) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test-core' using configuration from instancedir /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core
+2016-11-16 20:03:34.476 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.c.SolrCore [[test-core] ] Opening new SolrCore at [/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core], dataDir=[/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/data/]
+2016-11-16 20:03:34.570 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-11-16 20:03:34.917 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-11-16 20:03:34.918 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-11-16 20:03:34.929 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-11-16 20:03:34.929 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-11-16 20:03:34.948 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6ef01169[test-core] main]
+2016-11-16 20:03:34.957 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/conf
+2016-11-16 20:03:34.976 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-11-16 20:03:34.984 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-11-16 20:03:34.987 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/conf/elevate.xml
+2016-11-16 20:03:35.004 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-11-16 20:03:35.021 INFO  (searcherExecutor-7-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6ef01169[test-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-11-16 20:03:35.021 INFO  (searcherExecutor-7-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-16 20:03:35.021 INFO  (searcherExecutor-7-thread-1-processing-x:test-core) [   x:test-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-11-16 20:03:35.022 INFO  (searcherExecutor-7-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.SolrCore [test-core] Registered new searcher Searcher@6ef01169[test-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-11-16 20:03:35.025 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1551186384676454400
+2016-11-16 20:03:35.035 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=test-core&action=CREATE&instanceDir=test-core&wt=json} status=0 QTime=1762
+2016-11-16 20:04:05.263 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479326645096} status=0 QTime=0
+2016-11-16 20:04:05.279 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479326645096} status=0 QTime=7
+2016-11-16 20:04:05.279 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326645098} status=0 QTime=11
+2016-11-16 20:04:05.555 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479326645096} status=0 QTime=0
+2016-11-16 20:04:05.565 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479326645096} status=0 QTime=0
+2016-11-16 20:04:05.568 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326645098} status=0 QTime=8
+2016-11-16 20:04:07.562 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479326645096} status=0 QTime=0
+2016-11-16 20:04:07.569 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1479326647544} status=0 QTime=3
+2016-11-16 20:04:07.573 INFO  (qtp1123225098-17) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1479326647544} status=0 QTime=1
+2016-11-16 20:04:07.581 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479326645098} status=0 QTime=6
+2016-11-16 20:04:07.586 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1479326645098&ts=1479326645098} status=503 QTime=2
+2016-11-16 20:04:07.591 INFO  (qtp1123225098-14) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/system params={wt=json&_=1479326647544} status=0 QTime=11
+2016-11-16 20:25:57.706 INFO  (qtp1123225098-20) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2
+2016-11-16 20:25:57.709 ERROR (qtp1123225098-20) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 20:25:57.711 ERROR (qtp1123225098-20) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 20:25:57.711 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2} status=400 QTime=5
+2016-11-16 20:29:03.479 INFO  (qtp1123225098-14) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json
+2016-11-16 20:29:03.481 ERROR (qtp1123225098-14) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 20:29:03.484 ERROR (qtp1123225098-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 20:29:03.484 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json} status=400 QTime=6
+2016-11-16 20:29:19.112 INFO  (qtp1123225098-18) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json
+2016-11-16 20:29:19.115 ERROR (qtp1123225098-18) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 20:29:19.118 ERROR (qtp1123225098-18) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 20:29:19.118 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json} status=400 QTime=12
+2016-11-16 20:29:20.207 INFO  (qtp1123225098-20) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json
+2016-11-16 20:29:20.209 ERROR (qtp1123225098-20) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 20:29:20.210 ERROR (qtp1123225098-20) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 20:29:20.210 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json} status=400 QTime=3
+2016-11-16 20:30:33.144 INFO  (qtp1123225098-18) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json
+2016-11-16 20:30:33.146 ERROR (qtp1123225098-18) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 20:30:33.147 ERROR (qtp1123225098-18) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 20:30:33.147 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=json} status=400 QTime=3
+2016-11-16 20:31:14.753 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=7
+2016-11-16 20:31:14.796 INFO  (qtp1123225098-14) [   ] o.a.s.c.SolrCore [test-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@392454be
+2016-11-16 20:31:14.815 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=test-core&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=19
+2016-11-16 20:31:41.398 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=7
+2016-11-16 20:31:41.431 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=5
+2016-11-16 20:31:41.437 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&wt=json} status=0 QTime=0
+2016-11-16 20:31:41.464 INFO  (qtp1123225098-16) [   ] o.a.s.h.a.CoreAdminOperation core create command name=test-core&action=CREATE&instanceDir=test-core&wt=json
+2016-11-16 20:31:41.506 INFO  (qtp1123225098-16) [   ] o.a.s.c.SolrResourceLoader [test-core] Added 51 libs to classloader, from paths: [/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/clustering/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/extraction/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/langid/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/contrib/velocity/lib, /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/dist]
+2016-11-16 20:31:41.562 INFO  (qtp1123225098-16) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-11-16 20:31:41.668 INFO  (qtp1123225098-16) [   ] o.a.s.s.IndexSchema [test-core] Schema name=example-data-driven-schema
+2016-11-16 20:31:41.976 INFO  (qtp1123225098-16) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2016-11-16 20:31:42.024 INFO  (qtp1123225098-16) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test-core' using configuration from instancedir /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core
+2016-11-16 20:31:42.026 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.c.SolrCore [[test-core] ] Opening new SolrCore at [/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core], dataDir=[/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/data/]
+2016-11-16 20:31:42.045 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-11-16 20:31:42.097 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-11-16 20:31:42.097 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-11-16 20:31:42.103 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-11-16 20:31:42.104 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-11-16 20:31:42.107 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5bd3bc5f[test-core] main]
+2016-11-16 20:31:42.108 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/conf
+2016-11-16 20:31:42.109 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-11-16 20:31:42.109 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-11-16 20:31:42.110 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/test-core/conf/elevate.xml
+2016-11-16 20:31:42.128 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-11-16 20:31:42.130 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1551188153734266880
+2016-11-16 20:31:42.130 INFO  (searcherExecutor-12-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5bd3bc5f[test-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-11-16 20:31:42.132 INFO  (searcherExecutor-12-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-16 20:31:42.132 INFO  (searcherExecutor-12-thread-1-processing-x:test-core) [   x:test-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-11-16 20:31:42.135 INFO  (searcherExecutor-12-thread-1-processing-x:test-core) [   x:test-core] o.a.s.c.SolrCore [test-core] Registered new searcher Searcher@5bd3bc5f[test-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-11-16 20:31:42.141 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=test-core&action=CREATE&instanceDir=test-core&wt=json} status=0 QTime=677
+2016-11-16 20:56:04.103 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=1
+2016-11-16 20:56:20.217 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 20:56:38.060 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 20:58:05.543 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=1
+2016-11-16 21:00:10.478 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=1
+2016-11-16 21:00:23.706 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:00:36.707 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:00:56.958 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:01:48.008 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:02:28.712 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:02:36.272 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:03:00.432 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:04:09.104 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=1
+2016-11-16 21:04:25.342 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:04:53.251 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:05:23.798 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:05:41.894 INFO  (qtp1123225098-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:06:19.717 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:06:54.336 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:07:15.563 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test-core1&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:08:32.513 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:08:38.467 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:11:50.637 ERROR (qtp1123225098-16) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Missing required parameter: core
+	at org.apache.solr.common.params.RequiredSolrParams.get(RequiredSolrParams.java:48)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$12(CoreAdminOperation.java:262)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-11-16 21:11:50.638 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=LISTSNAPSHOTS&indexInfo=true&wt=javabin&version=2} status=400 QTime=1
+2016-11-16 21:12:03.669 ERROR (qtp1123225098-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: SolrCore 'DefaultSchemaPopulatorTest' is not available due to init failure: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1097)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:252)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:414)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	... 26 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:13:33.454 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:13:50.501 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:14:08.650 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:14:27.667 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:14:59.309 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:15:00.583 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:15:49.916 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:18:13.913 INFO  (qtp1123225098-14) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2
+2016-11-16 21:18:13.915 ERROR (qtp1123225098-14) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:18:13.917 ERROR (qtp1123225098-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:18:13.917 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2} status=400 QTime=4
+2016-11-16 21:18:20.279 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:18:54.599 INFO  (qtp1123225098-21) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2
+2016-11-16 21:18:54.600 ERROR (qtp1123225098-21) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:18:54.602 ERROR (qtp1123225098-21) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:18:54.602 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=DefaultSchemaPopulatorTest&wt=javabin&version=2} status=400 QTime=3
+2016-11-16 21:23:48.034 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:24:08.337 INFO  (qtp1123225098-13) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=&wt=javabin&version=2
+2016-11-16 21:24:08.339 ERROR (qtp1123225098-13) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:24:08.340 ERROR (qtp1123225098-13) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:24:08.340 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=&wt=javabin&version=2} status=400 QTime=2
+2016-11-16 21:27:20.224 INFO  (qtp1123225098-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:30:16.850 INFO  (qtp1123225098-16) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=org.apache.solr.common.SolrException:org.apache.solr.common.SolrException:+Could+not+load+conf+for+core+DefaultSchemaPopulatorTest:+Error+loading+solr+config+from+/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml&wt=javabin&version=2
+2016-11-16 21:30:16.851 ERROR (qtp1123225098-16) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:30:16.852 ERROR (qtp1123225098-16) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:30:16.853 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=org.apache.solr.common.SolrException:org.apache.solr.common.SolrException:+Could+not+load+conf+for+core+DefaultSchemaPopulatorTest:+Error+loading+solr+config+from+/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/conf/solrconfig.xml&wt=javabin&version=2} status=400 QTime=2
+2016-11-16 21:34:06.710 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=DefaultSchemaPopulatorTest&action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=0
+2016-11-16 21:35:11.771 INFO  (qtp1123225098-21) [   ] o.a.s.h.a.CoreAdminOperation core create command name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException:+Could+not+load+conf+for+core+DefaultSchemaPopulatorTest:+Error+loading+solr+config+from+/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest&wt=javabin&version=2
+2016-11-16 21:35:11.773 ERROR (qtp1123225098-21) [   ] o.a.s.c.CoreContainer Error creating core [DefaultSchemaPopulatorTest]: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:35:11.775 ERROR (qtp1123225098-21) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'DefaultSchemaPopulatorTest': Unable to create core [DefaultSchemaPopulatorTest] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [DefaultSchemaPopulatorTest]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Could not load conf for core DefaultSchemaPopulatorTest: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:35:11.775 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=DefaultSchemaPopulatorTest&action=CREATE&instanceDir=/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/org.apache.solr.common.SolrException:org.apache.solr.common.SolrException:+Could+not+load+conf+for+core+DefaultSchemaPopulatorTest:+Error+loading+solr+config+from+/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/DefaultSchemaPopulatorTest&wt=javabin&version=2} status=400 QTime=3
+2016-11-16 21:36:26.148 INFO  (qtp1123225098-14) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1479332186121} status=0 QTime=0
+2016-11-16 21:36:26.150 INFO  (qtp1123225098-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=8
+2016-11-16 21:36:26.152 INFO  (qtp1123225098-21) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1479332186122} status=0 QTime=0
+2016-11-16 21:36:26.161 INFO  (qtp1123225098-20) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1479332186010&ts=1479332186010} status=503 QTime=0
+2016-11-16 21:36:26.165 INFO  (qtp1123225098-16) [   x:test-core] o.a.s.c.S.Request [test-core]  webapp=/solr path=/admin/system params={wt=json&_=1479332186121} status=0 QTime=9
+2016-11-16 21:36:26.395 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479332186008} status=0 QTime=0
+2016-11-16 21:37:05.623 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@7c6908d7{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-11-16 21:37:05.626 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1003752023
+2016-11-16 21:37:05.650 INFO  (coreCloseExecutor-17-thread-1) [   x:test-core] o.a.s.c.SolrCore [test-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@9385e4b
+2016-11-16 21:37:05.666 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.

@@ -1,0 +1,137 @@
+2016-11-16 21:38:23.200 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-11-16 21:38:23.479 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2016-11-16 21:38:23.479 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2016-11-16 21:38:23.479 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0
+2016-11-16 21:38:23.542 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2016-11-16T21:38:23.480Z
+2016-11-16 21:38:23.543 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2016-11-16 21:38:23.563 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr
+2016-11-16 21:38:23.570 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/solr.xml
+2016-11-16 21:38:23.856 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-11-16 21:38:23.969 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr
+2016-11-16 21:38:23.997 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@7c6908d7{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-11-16 21:38:23.997 INFO  (main) [   ] o.e.j.s.Server Started @1351ms
+2016-11-16 21:38:27.940 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479332186008} status=0 QTime=69
+2016-11-16 21:38:27.968 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=96
+2016-11-16 21:38:28.003 INFO  (qtp1123225098-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=8
+2016-11-16 21:38:54.318 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479332186008} status=0 QTime=0
+2016-11-16 21:38:54.323 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479332334305&since=0} status=0 QTime=1
+2016-11-16 21:38:54.337 INFO  (qtp1123225098-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=11
+2016-11-16 21:38:55.697 INFO  (qtp1123225098-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479332186008} status=0 QTime=0
+2016-11-16 21:38:55.701 INFO  (qtp1123225098-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479332186008} status=0 QTime=0
+2016-11-16 21:38:55.711 INFO  (qtp1123225098-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=7
+2016-11-16 21:39:12.987 INFO  (qtp1123225098-21) [   ] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1479332186008
+2016-11-16 21:39:12.998 ERROR (qtp1123225098-21) [   ] o.a.s.c.CoreContainer Error creating core [new_core]: Could not load conf for core new_core: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+2016-11-16 21:39:13.003 ERROR (qtp1123225098-21) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:813)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:88)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:377)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:660)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:855)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:779)
+	... 33 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:840)
+	... 34 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:187)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 35 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/home/librucha/projects/librucha.cz/solr-tools/solr-server/solr-6.3.0/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:406)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:361)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:202)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:179)
+	... 37 more
+
+2016-11-16 21:39:13.003 INFO  (qtp1123225098-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1479332186008} status=400 QTime=16
+2016-11-16 21:42:42.752 INFO  (qtp1123225098-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS} status=0 QTime=0
+2016-11-16 21:43:03.622 INFO  (qtp1123225098-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479332186008} status=0 QTime=0
+2016-11-16 21:43:03.635 INFO  (qtp1123225098-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=8
+2016-11-16 21:43:03.653 INFO  (qtp1123225098-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479332186010} status=0 QTime=7
+2016-11-16 21:43:32.924 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@7c6908d7{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-11-16 21:43:32.924 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1003752023
