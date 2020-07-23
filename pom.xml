@@ -18,7 +18,7 @@
         <junit.version>4.12</junit.version>
         <logback.version>1.1.7</logback.version>
         <lombok.version>1.16.10</lombok.version>
-        <solr.version>6.3.0</solr.version>
+        <solr.version>8.6.0</solr.version>
         <spock-genesis.version>0.6.0</spock-genesis.version>
         <spock.version>1.1-groovy-2.4-rc-3</spock.version>
 
