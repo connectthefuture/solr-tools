@@ -16,7 +16,7 @@
         <commons-lang3.version>3.5</commons-lang3.version>
         <findbugs.version>3.0.1</findbugs.version>
         <junit.version>4.13.1</junit.version>
-        <logback.version>1.1.7</logback.version>
+        <logback.version>1.2.0</logback.version>
         <lombok.version>1.16.10</lombok.version>
         <solr.version>8.6.0</solr.version>
         <spock-genesis.version>0.6.0</spock-genesis.version>
